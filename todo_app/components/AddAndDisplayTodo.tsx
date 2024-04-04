@@ -83,7 +83,7 @@ const AddAndDisplayTodo = () => {
           <button className="btn">Add Task</button>
         </form>
       </div>
-      <div className="displayTask flex flex-wrap items-center justify-center gap-8 mt-16 mx-4">
+      <div className="displayTask flex flex-wrap sm:items-start items-center sm:justify-start justify-center gap-8 mt-16 mx-4">
         {renderData()}
       </div>
     </div>
