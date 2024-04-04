@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+.btn {
+  @apply active:bg-white active:text-black my-2 py-2 w-[120px] mx-auto text-xl rounded-lg bg-black text-white font-semibold;
+}
+.pl {
+  @apply w-2/5;
+}
+@tailwind utilities;
