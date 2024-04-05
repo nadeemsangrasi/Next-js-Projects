@@ -1,0 +1,36 @@
+.contain {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contain h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 3px 0px;
+}
+.contain h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  padding-bottom: 4px;
+}
+
+.contain h3 {
+  font-size: 1.3rem;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  margin: 18px 0px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: blue;
+  text-decoration: underline;
+}
