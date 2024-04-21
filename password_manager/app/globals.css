@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.myContainer {
+  @apply container mx-auto px-16 py-6;
+}
+.myContainer li {
+  list-style: none;
+}
