@@ -138,7 +138,7 @@ const HeroSection = () => {
       />
 
       <div className=" inset-0 -z-1 min-h-[100vh] w-full items-center px-5 py-2 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
-        <div className="myContainer text-white text-center ">
+        <div className="py-10 md:myContainer text-white text-center ">
           <form action="#" onSubmit={handleSubmit}>
             <div className="heading">
               <span className="text-[#ee98fb] text-3xl"> &lt;</span>
@@ -154,27 +154,28 @@ const HeroSection = () => {
                 value={urlInput}
                 type="text"
                 placeholder="Enter website URL"
-                className="w-[82%] p-2 rounded-2xl text-black text-sm  lg:text-xl"
+                className="md:w-[82%] w-full p-2 rounded-2xl text-black text-sm  lg:text-xl"
               />
-              <div className=" two my-6 space-x-4 relative">
+              <div className="  my-6 space-x-4 relative">
                 <input
                   onChange={handleUserNameInputChange}
                   value={userNameInput}
                   type="text"
                   placeholder="Enter Username"
-                  className="w-[40%] text-sm  lg:text-xl lg:w-[58%] p-2 rounded-2xl text-black"
+                  className="w-[47%] md:w-[40%] text-sm  lg:text-xl lg:w-[58%] p-2 rounded-2xl text-black"
                 />
                 <input
                   onChange={handlePasswordInputChange}
                   value={passwordInput}
                   type={type}
                   placeholder="Enter Password"
-                  className="w-[40%] text-sm  lg:text-lg lg:w-[23%] p-2 rounded-2xl text-black"
+                  className="w-[47%] md:w-[40%] text-sm  lg:text-lg lg:w-[23%] p-2 rounded-2xl text-black"
                 />
 
                 <img
                   onClick={handleChangeImage}
-                  className="h-[33px] w-[33px] lg:w-[43px] lg:h-[40px] mix-blend-darken absolute right-[10%] top-[9%] "
+                  className="h-[33px] w-[33px] lg:w-[43px] lg:h-[40px] mix-blend-darken absolute 
+                  right-[3%] top-[9%] md:right-[10%] md:top-[9%] "
                   src={src}
                   height={40}
                   width={40}
