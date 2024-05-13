@@ -14,7 +14,7 @@ function HeroSection() {
   const [type, setType] = useState<string>("");
   const [score, setScore] = useState<number>(0);
   const [clicked, setClicked] = useState<boolean>(false);
-  const [timer, setTimer] = useState<number>(15);
+  const [timer, setTimer] = useState<number>(30);
   const [laodTimer, setLoadTimer] = useState<boolean>(false);
 
   async function getCatogry(): Promise<void> {
@@ -119,10 +119,10 @@ function HeroSection() {
           setTimer(timer - 1);
         } else {
           setCurrentQuestionIndex(currentQuestionIndex + 1);
-          setTimer(15);
+          setTimer(30);
         }
       } else {
-        setTimer(15);
+        setTimer(30);
       }
     }, 1000);
   }
