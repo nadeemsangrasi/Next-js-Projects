@@ -127,7 +127,7 @@ function HeroSection() {
     }, 1000);
   }
   return (
-    <div>
+    <div className="min-h-[80vh] mb-6 md:mb-0">
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -141,7 +141,7 @@ function HeroSection() {
         theme="light"
       />
       {questions.length == 0 ? (
-        <div className="container pt-4 h-full  mx-auto">
+        <div className="container pt-4">
           <div className="text-center">
             <h1 className=" text-4xl font-bold pb-2 ">
               Welcome to the Ultimate Quiz App
@@ -151,7 +151,7 @@ function HeroSection() {
             </p>
           </div>
           <div className=" flex justify-evenly flex-wrap gap-8 lg:gap-0">
-            <div className="w-[300px] min-h-[270px] p-4 border-2 border-gray-300 rounded-lg lg:mb-0">
+            <div className="w-[300px] min-h-[270px] p-4 border-2 border-gray-300 rounded-lg ">
               <h1 className="text-center text-3xl font-bold py-2">
                 Total Questions
               </h1>
@@ -216,7 +216,7 @@ function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="text-center pt-4  mb-[8rem]">
+          <div className="text-center pt-4  ">
             <Button onClick={loadQuestions}>Start Quiz</Button>
             <h2 className="py-2 font-semibold text-xl">YOU CAN DO IT !</h2>
           </div>
@@ -224,7 +224,7 @@ function HeroSection() {
       ) : currentQuestionIndex >= questions.length ? (
         <div>
           {score == questions.length ? (
-            <div className="mb-[8.2rem] md:mb-0 mx-3 md:container md:mx-auto md:w-[66%] border-2 border-gray-300 my-16 p-4 text-center rounded-lg ">
+            <div className="mx-3 md:container md:mx-auto md:w-[66%] border-2 border-gray-300 mt-16 p-4 text-center rounded-lg ">
               <h1 className="text-green-600 font-semibold text-3xl pb-2">
                 CONGRATS YOU PASSED THE QUIZ WITH FULL POINTS
               </h1>
@@ -241,7 +241,7 @@ function HeroSection() {
               </Button>
             </div>
           ) : score >= questions.length / 2 ? (
-            <div className="mb-[8.2rem] md:mb-0 mx-3 md:container md:mx-auto md:w-[66%] border-2 border-gray-300 my-16 p-4 text-center rounded-lg ">
+            <div className=" mx-3 md:container md:mx-auto md:w-[66%] border-2 border-gray-300 mt-16 p-4 text-center rounded-lg ">
               <h1 className="text-green-600 font-semibold text-3xl pb-2">
                 CONGRATS YOU PASSED THE QUIZ
               </h1>
@@ -258,7 +258,7 @@ function HeroSection() {
               </Button>
             </div>
           ) : (
-            <div className="mb-[8.2rem] md:mb-0 mx-3 md:container md:mx-auto md:w-[66%] border-2 border-gray-300 my-16 p-4 text-center rounded-lg ">
+            <div className=" mx-3 md:container md:mx-auto md:w-[66%] border-2 border-gray-300 mt-16 p-4 text-center rounded-lg ">
               <h1 className="text-red-500 font-semibold text-3xl pb-2">
                 BETTER LUCK NEXT TIME
               </h1>
@@ -292,7 +292,7 @@ function HeroSection() {
             </div>
             <div></div>
           </div>
-          <div className=" md:mx-auto md:w-[70%] border-2 border-gray-300 p-4 mb-[8rem] md:mb-0 mx-3">
+          <div className=" md:mx-auto md:w-[70%] border-2 border-gray-300 p-4 mx-3">
             <h1 className="text-3xl font-bold py-2 break-words">
               {questions[currentQuestionIndex].question}
             </h1>

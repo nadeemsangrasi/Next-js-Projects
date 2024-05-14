@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="relative min-h-[100vh]">
+    <div className="relative">
       <Navbar />
       <HeroSection />
       <Footer />
