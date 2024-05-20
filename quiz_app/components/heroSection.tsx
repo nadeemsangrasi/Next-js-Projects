@@ -51,10 +51,11 @@ function HeroSection() {
     if (clicked) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setClicked(false);
+      setTimer(30);
     } else {
       toast("Please choose option", {
         position: "top-center",
-        autoClose: 5000,
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -119,10 +120,8 @@ function HeroSection() {
           setTimer(timer - 1);
         } else {
           setCurrentQuestionIndex(currentQuestionIndex + 1);
-          setTimer(30);
         }
       } else {
-        setTimer(30);
       }
     }, 1000);
   }
